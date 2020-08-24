@@ -32,7 +32,7 @@ const showLocalNotification = (title, body, swRegistration) => {
 self.addEventListener("push", function(event) {
   	if (event.data) {
     	console.log("Push event!! ", event.data.text());
-    	showLocalNotification("Yolo", event.data.text(),  self.registration);
+    	showLocalNotification("Hi! This is a notification", event.data.text(),  self.registration);
   	} else {
     	console.log("Push event but no data");
   	}
