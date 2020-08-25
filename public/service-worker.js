@@ -10,7 +10,7 @@ const urlB64ToUint8Array = base64String => {
 }
 
 const saveSubscription = async subscription => {
-  	const SERVER_URL = 'https//:rz-push-demo.herokuapp.com/save-subscription'
+  	const SERVER_URL = 'https://rz-push-demo.herokuapp.com/save-subscription'
   	const response = await fetch(SERVER_URL, {
     	method: 'post',
     	headers: {
