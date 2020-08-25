@@ -4,6 +4,8 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const webpush = require('web-push')
 
+require('dotenv').config()
+
 app.use(cors())
 app.use(bodyParser.json())
 
@@ -19,8 +21,8 @@ const saveToDatabase = async subscription => {
 
 // web push
 const vapidKeys = {
-  	publicKey: 'BCfwcINd85VE5EkCYRGQlVMH4UsLo0Ljd8lHxno83yq3gLVae_949zYc3tdnKb_qlFmxfS_WP84Dalv8lB7XpTE',
-  	privateKey: 'wGcqpX3rJLW0sMoCh0U43pYVxini7Lcx0s0lDBI0ys0',
+  	publicKey: process.env.PUBLIC_KEY,
+  	privateKey: process.env.PRIVATE_KAY,
 }
 
 //setting our previously generated VAPID keys
@@ -59,13 +61,3 @@ app.get('/send-notification', (req, res) => {
 const port=process.env.PORT || 3000
 server = app.listen(port);
 console.log("App listening on port " + port);
-
-/**
-
-Public Key:
-BCfwcINd85VE5EkCYRGQlVMH4UsLo0Ljd8lHxno83yq3gLVae_949zYc3tdnKb_qlFmxfS_WP84Dalv8lB7XpTE
-
-Private Key:
-wGcqpX3rJLW0sMoCh0U43pYVxini7Lcx0s0lDBI0ys0
-
-*/
