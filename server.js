@@ -20,14 +20,14 @@ const saveToDatabase = async subscription => {
 // web push
 const vapidKeys = {
   	publicKey: 'BCfwcINd85VE5EkCYRGQlVMH4UsLo0Ljd8lHxno83yq3gLVae_949zYc3tdnKb_qlFmxfS_WP84Dalv8lB7XpTE',
-  	privateKey: 'wGcqpX3rJLW0sMoCh0U43pYVxini7Lcx0s0lDBI0ys0',
+  	//privateKey: 'wGcqpX3rJLW0sMoCh0U43pYVxini7Lcx0s0lDBI0ys0',
 }
 
 //setting our previously generated VAPID keys
 webpush.setVapidDetails(
   	'mailto:raj.kumar@webklipper.com',
   	vapidKeys.publicKey,
-  	vapidKeys.privateKey
+  	//vapidKeys.privateKey
 )
 
 //function to send the notification to the subscribed device
