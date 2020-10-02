@@ -54,6 +54,6 @@ self.addEventListener('activate', async () => {
     	const response = await saveSubscription(subscription)
     	console.log(JSON.stringify(response))
   	} catch (err) {
-    	console.log('Error', err)
+    	console.log('Error 1', err)
   	}
 })
