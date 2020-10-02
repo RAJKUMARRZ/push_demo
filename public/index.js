@@ -27,7 +27,7 @@ const requestNotificationPermission = async () => {
 
 const main = async () => {
     check();
-    const swRegistration = await registerServiceWorker();
     const permission =  await requestNotificationPermission();
+    const swRegistration = await registerServiceWorker();
     console.log(Notification.permission)
 }

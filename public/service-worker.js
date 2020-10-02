@@ -10,7 +10,7 @@ const urlB64ToUint8Array = base64String => {
 }
 
 const saveSubscription = async subscription => {
-  	const SERVER_URL = 'https://rz-push-demo.herokuapp.com/save-subscription'
+  	const SERVER_URL = 'https://localhost:3000/save-subscription'
   	const response = await fetch(SERVER_URL, {
     	method: 'post',
     	headers: {
@@ -54,6 +54,6 @@ self.addEventListener('activate', async () => {
     	const response = await saveSubscription(subscription)
     	console.log(JSON.stringify(response))
   	} catch (err) {
-    	console.log('Error', err)
+    	console.log('Error 1', err)
   	}
 })
