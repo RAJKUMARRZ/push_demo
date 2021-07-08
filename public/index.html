@@ -1,18 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>
 		Web Push Demo
 	</title>
 	<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <script src="index.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+	<!-- <script id='_webengage_script_tag' type='text/javascript'>
+		var webengage; !function (w, e, b, n, g) { function o(e, t) { e[t[t.length - 1]] = function () { r.__queue.push([t.join("."), arguments]) } } var i, s, r = w[b], z = " ", l = "init options track screen onReady".split(z), a = "feedback survey notification".split(z), c = "options render clear abort".split(z), p = "Open Close Submit Complete View Click".split(z), u = "identify login logout setAttribute".split(z); if (!r || !r.__v) { for (w[b] = r = { __queue: [], __v: "6.0", user: {} }, i = 0; i < l.length; i++)o(r, [l[i]]); for (i = 0; i < a.length; i++) { for (r[a[i]] = {}, s = 0; s < c.length; s++)o(r[a[i]], [a[i], c[s]]); for (s = 0; s < p.length; s++)o(r[a[i]], [a[i], "on" + p[s]]) } for (i = 0; i < u.length; i++)o(r.user, ["user", u[i]]); setTimeout(function () { var f = e.createElement("script"), d = e.getElementById("_webengage_script_tag"); f.type = "text/javascript", f.async = !0, f.src = ("https:" == e.location.protocol ? "https://widgets.in.webengage.com" : "http://widgets.in.webengage.com") + "/js/webengage-min-v-6.0.js", d.parentNode.insertBefore(f, d) }) } }(window, document, "webengage");
+		webengage.init('in~311c4860');
+	</script> -->
+	<!-- <script id='_webengage_script_tag' type='text/javascript'>
+		var webengage; !function (w, e, b, n, g) {
+			function o(e, t) {
+				e[t[t.length - 1]] = function () {
+					r.__queue.push([t.join("."),
+						arguments])
+				}
+			} var i, s, r = w[b], z = " ", l = "init options track screen onReady".split(z), a = "feedback survey notification".split(z), c = "options render clear abort".split(z), p = "Open Close Submit Complete View Click".split(z), u = "identify login logout setAttribute".split(z); if (!r || !r.__v) { for (w[b] = r = { __queue: [], __v: "6.0", user: {} }, i = 0; i < l.length; i++)o(r, [l[i]]); for (i = 0; i < a.length; i++) { for (r[a[i]] = {}, s = 0; s < c.length; s++)o(r[a[i]], [a[i], c[s]]); for (s = 0; s < p.length; s++)o(r[a[i]], [a[i], "on" + p[s]]) } for (i = 0; i < u.length; i++)o(r.user, ["user", u[i]]); setTimeout(function () { var f = e.createElement("script"), d = e.getElementById("_webengage_script_tag"); f.type = "text/javascript", f.async = !0, f.src = ("https:" == e.location.protocol ? "https://52dee33ffd1a.ngrok.io" : "https://52dee33ffd1a.ngrok.io") + "/js/webengage-min-v-6.0.js", d.parentNode.insertBefore(f, d) }) }
+		}(window, document, "webengage"); webengage.init("~1341051ac");
+	</script> -->
+	<!-- <style>
+		.webklipper-async-hide {
+			opacity: 0 !important
+		}
+	</style> -->
+	<!-- <script>(function (a, s, y, n, c, h, i, d, e) {
+			s.className += ' ' + y; h.start = 1 * new Date;
+			h.abort = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+			(a[n] = a[n] || []).hideDom = h; setTimeout(function () { i(); h.abort = null }, c); h.timeout = c;
+		})(window, document.documentElement, 'webklipper-async-hide', 'webengage', 4000, {});
+	</script> -->
+	<!-- <script src="index.js"></script> -->
+	<!-- <script src="test.js"></script> -->
+	<!-- <script id='_webengage_script_tag' type='text/javascript'>
+		var webengage; !function (w, e, b, n, g) {
+			function o(e, t) {
+				e[t[t.length - 1]] = function () {
+					r.__queue.push([t.join("."),
+						arguments])
+				}
+			} var i, s, r = w[b], z = " ", l = "init options track screen onReady".split(z), a = "feedback survey notification".split(z), c = "options render clear abort".split(z), p = "Open Close Submit Complete View Click".split(z), u = "identify login logout setAttribute".split(z); if (!r || !r.__v) { for (w[b] = r = { __queue: [], __v: "6.0", user: {} }, i = 0; i < l.length; i++)o(r, [l[i]]); for (i = 0; i < a.length; i++) { for (r[a[i]] = {}, s = 0; s < c.length; s++)o(r[a[i]], [a[i], c[s]]); for (s = 0; s < p.length; s++)o(r[a[i]], [a[i], "on" + p[s]]) } for (i = 0; i < u.length; i++)o(r.user, ["user", u[i]]); setTimeout(function () { var f = e.createElement("script"), d = e.getElementById("_webengage_script_tag"); f.type = "text/javascript", f.async = !0, f.src = ("https:" == e.location.protocol ? "https://widgets.stg.webengage.biz" : "http://widgets.stg.webengage.biz") + "/js/webengage-min-v-7.0.js", d.parentNode.insertBefore(f, d) }) }
+		}(window, document, "webengage"); webengage.init("stg~~13410605d");
+	</script> -->
+	<!-- <script id='_webengage_script_tag' type='text/javascript'>
+		var webengage; !function (w, e, b, n, g) {
+			function o(e, t) {
+				e[t[t.length - 1]] = function () {
+					r.__queue.push([t.join("."),
+						arguments])
+				}
+			} var i, s, r = w[b], z = " ", l = "init options track screen onReady".split(z), a = "feedback survey notification".split(z), c = "options render clear abort".split(z), p = "Open Close Submit Complete View Click".split(z), u = "identify login logout setAttribute".split(z); if (!r || !r.__v) { for (w[b] = r = { __queue: [], __v: "6.0", user: {} }, i = 0; i < l.length; i++)o(r, [l[i]]); for (i = 0; i < a.length; i++) { for (r[a[i]] = {}, s = 0; s < c.length; s++)o(r[a[i]], [a[i], c[s]]); for (s = 0; s < p.length; s++)o(r[a[i]], [a[i], "on" + p[s]]) } for (i = 0; i < u.length; i++)o(r.user, ["user", u[i]]); setTimeout(function () { var f = e.createElement("script"), d = e.getElementById("_webengage_script_tag"); f.type = "text/javascript", f.async = !0, f.src = ("https:" == e.location.protocol ? "https://ssl.widgets.webengage.com" : "http://cdn.widgets.webengage.com") + "/js/webengage-min-v-6.0.js", d.parentNode.insertBefore(f, d) }) }
+		}(window, document, "webengage"); webengage.init("~1341051ac");
+		// webengage.user.login('abc'); //rzrz1234 is the unique user identifier being used here
+		// webengage.user.setAttribute('we_phone', '12345678');
+	// webengage.track("my_custom_event1", {
+	// "name": "abc",
+	// });
+	// webengage.user.setAttribute('we_email', 'rzrz@rz.com');
+	// webengage.user.setAttribute('we_city', 'Agra');
+	// webengage.user.setAttribute('myMail', 'rzrz@rz.com');
+	</script> -->
+
+	<!-- <script id='_webengage_script_tag' type='text/javascript'>
+		var webengage; !function (w, e, b, n, g) { function o(e, t) { e[t[t.length - 1]] = function () { r.__queue.push([t.join("."), arguments]) } } var i, s, r = w[b], z = " ", l = "init options track screen onReady".split(z), a = "feedback survey notification".split(z), c = "options render clear abort".split(z), p = "Open Close Submit Complete View Click".split(z), u = "identify login logout setAttribute".split(z); if (!r || !r.__v) { for (w[b] = r = { __queue: [], __v: "6.0", user: {} }, i = 0; i < l.length; i++)o(r, [l[i]]); for (i = 0; i < a.length; i++) { for (r[a[i]] = {}, s = 0; s < c.length; s++)o(r[a[i]], [a[i], c[s]]); for (s = 0; s < p.length; s++)o(r[a[i]], [a[i], "on" + p[s]]) } for (i = 0; i < u.length; i++)o(r.user, ["user", u[i]]); setTimeout(function () { var f = e.createElement("script"), d = e.getElementById("_webengage_script_tag"); f.type = "text/javascript", f.async = !0, f.src = ("https:" == e.location.protocol ? "https://widgets.in.webengage.com" : "https://widgets.in.webengage.com") + "/js/webengage-min-v-6.0.js", d.parentNode.insertBefore(f, d) }) } }(window, document, "webengage");
+		webengage.init('in~d3a49d17');
+	</script> -->
+	<!-- <script id='_webengage_script_tag' type='text/javascript'>
+		var webengage; !function (w, e, b, n, g) {
+			function o(e, t) {
+				e[t[t.length - 1]] = function () {
+					r.__queue.push([t.join("."),
+						arguments])
+				}
+			} var i, s, r = w[b], z = " ", l = "init options track screen onReady".split(z), a = "feedback survey notification".split(z), c = "options render clear abort".split(z), p = "Open Close Submit Complete View Click".split(z), u = "identify login logout setAttribute".split(z); if (!r || !r.__v) { for (w[b] = r = { __queue: [], __v: "6.0", user: {} }, i = 0; i < l.length; i++)o(r, [l[i]]); for (i = 0; i < a.length; i++) { for (r[a[i]] = {}, s = 0; s < c.length; s++)o(r[a[i]], [a[i], c[s]]); for (s = 0; s < p.length; s++)o(r[a[i]], [a[i], "on" + p[s]]) } for (i = 0; i < u.length; i++)o(r.user, ["user", u[i]]); setTimeout(function () { var f = e.createElement("script"), d = e.getElementById("_webengage_script_tag"); f.type = "text/javascript", f.async = !0, f.src = ("https:" == e.location.protocol ? "https://webengage-widget.s3.amazonaws.com" : "https://webengage-widget.s3.amazonaws.com") + "/js/webengage-min-v-6.0.js", d.parentNode.insertBefore(f, d) }) }
+		}(window, document, "webengage");
+		// webengage.init("~47b657bd");
+	</script> -->
+
+	<script id='_webengage_script_tag' type='text/javascript'>
+		var webengage; !function (w, e, b, n, g) { function o(e, t) { e[t[t.length - 1]] = function () { r.__queue.push([t.join("."), arguments]) } } var i, s, r = w[b], z = " ", l = "init options track screen onReady".split(z), a = "feedback survey notification".split(z), c = "options render clear abort".split(z), p = "Open Close Submit Complete View Click".split(z), u = "identify login logout setAttribute".split(z); if (!r || !r.__v) { for (w[b] = r = { __queue: [], __v: "6.0", user: {} }, i = 0; i < l.length; i++)o(r, [l[i]]); for (i = 0; i < a.length; i++) { for (r[a[i]] = {}, s = 0; s < c.length; s++)o(r[a[i]], [a[i], c[s]]); for (s = 0; s < p.length; s++)o(r[a[i]], [a[i], "on" + p[s]]) } for (i = 0; i < u.length; i++)o(r.user, ["user", u[i]]); setTimeout(function () { var f = e.createElement("script"), d = e.getElementById("_webengage_script_tag"); f.type = "text/javascript", f.async = !0, f.src = ("https:" == e.location.protocol ? "https://ssl.widgets.webengage.com" : "http://cdn.widgets.webengage.com") + "/js/webengage-min-v-6.0.js", d.parentNode.insertBefore(f, d) }) } }(window, document, "webengage");
+		// webengage.init('~47b657bd');
+	</script>
 </head>
-<body>
-	<h1>
+
+<body style="margin: 0">
+	<div id="shopify-section-hero"
+		style="background-image: url('https://wallpapercave.com/wp/wp2577525.jpg'); height: 800px; width: 100%; background-size: cover;">
+	</div>
+	<div class="hello11" style="background-color:coral; height: 600px;">
+		Hi
+	</div>
+	<h1 id="Hello1" style="width: 30%;">
 		Hello Push Notification
 	</h1>
-	<button id="permission-btn" onclick="main()">Ask Permission</button>
+	<h2>
+		This must be below Hello
+	</h2>
+	<a href="hello">hello</a></br>
+	<a href="hello1">hello1</a></br>
+	<a href="hello2">hello2</a></br>
+	<a href="hello3">hello3</a></br>
+	<a href="hello4">hello4</a></br>
+
+	<!-- <button id="permission-btn" onclick="main()">Ask Permission</button> -->
 </body>
+
 </html>

@@ -1,0 +1,23 @@
+<style>
+	a:link {
+		color: green;
+		size: 12px;
+	}
+
+	a:visited {
+		color: red;
+		size: 1px;
+		/*#3366A0;*/
+	}
+</style>
+<script>
+	setTimeout(function () {
+		console.log('inside test')
+		var a = document.createElement('a');
+		a.href = location;
+		a.id = 'test';
+		// a.style = `color: blue;`;
+		document.body.appendChild(a);
+		parent.checkResult();
+	}, 100);
+</script>

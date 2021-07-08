@@ -1,3 +1,11 @@
 body {
   background-color: beige;
 }
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
