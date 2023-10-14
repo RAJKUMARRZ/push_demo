@@ -1,13 +1,12 @@
 var express = require('express')
 var app = express()
 const cors = require('cors')
-const bodyParser = require('body-parser')
 const webpush = require('web-push')
 
 require('dotenv').config()
 
 app.use(cors())
-app.use(bodyParser.json())
+app.use(express.json())
 
 
 //static directory, public 
